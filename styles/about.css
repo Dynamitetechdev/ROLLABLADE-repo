@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --transition: all 300ms ease-in-out;
+  --dark-color: #332e29;
+  --light-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  padding-top: 60px;
+}
+
+button,
+.btn {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+  height: 50px;
+  z-index: 1;
+  padding: 0 5px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+.lead {
+  opacity: 0.8;
+  padding: 1rem 0;
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+/* button down and title -reusable */
+.btn-down {
+  font-size: 3rem;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: var(--transition);
+}
+
+.btn-down:hover {
+  opacity: 0.8;
+  transform: translateY(5px);
+}
+
+.btn-down-white {
+  color: var(--light-color);
+}
+
+.title h2,
+.title h1 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  position: relative;
+}
+
+.title h2::after,
+.title h1::after {
+  position: absolute;
+  content: "";
+  top: 120%;
+  left: 0;
+  width: 70px;
+  height: 4px;
+  background-color: var(--dark-color);
+}
+
+
+.title h2 h1 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  position: relative;
+}
+
+.title h1::after,
+.title h2::after {
+  position: absolute;
+  content: "";
+  top: 120%;
+  left: 0;
+  width: 70px;
+  height: 4px;
+  background-color: var(--dark-color);
+}
+
+/* button down and title -reusable ends */
+
+/* about-us */
+
+.about-me-master {
+  background-color: #f3f1f1;
+  margin-bottom: 35px;
+}
+
+
+.about-me-sub {
+  display: flex;
+  margin: 0 auto;
+  padding: 7rem 0;
+  max-width: 1200px;
+
+}
+
+.about-right {
+  flex-basis: 52%;
+  margin-left: 35px;
+  height: 550px;
+  overflow: hidden;
+
+}
+
+.about-left {
+  flex-basis: 48%;
+}
+
+/* About-us-end */
+
+.title {
+  margin-bottom: 5rem;
+}
+
+#exp {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.experience-sub {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin: 0 auto;
+  padding: 7rem 0;
+  max-width: 1200px;
+
+}
+
+#ch {
+  display: none;
+}
+
+#ch:checked~.content {
+  display: block;
+}
+
+
+#ch:checked~label {
+  display: none;
+}
+
+.content {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  background-color: gray;
+  padding: 3px 3px;
+  border-radius: 3px;
+  margin-top: 12px;
+}
+
+label:hover {
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+#sh {
+  display: none;
+}
+
+#sh:checked~.content1 {
+  display: block;
+}
+
+#sh:checked~label {
+  display: none;
+}
+
+.content1 {
+  display: none;
+}
+
+#th {
+  display: none;
+}
+
+#th:checked~.content2 {
+  display: block;
+}
+
+#th:checked~label {
+  display: none;
+}
+
+.content2 {
+  display: none;
+}
+
+/* ends th*/
+
+
+/* ends uh*/
+
+
+#uh {
+  display: none;
+}
+
+#uh:checked~.content3 {
+  display: block;
+}
+
+#uh:checked~label {
+  display: none;
+}
+
+.content3 {
+  display: none;
+}
+
+/* footer*/
+#footer {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  margin-bottom: 30px;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content h3 {
+  color: var(--light-color);
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+.footer-content ul {
+  flex-direction: column;
+}
+
+.footer-content ul li a {
+  color: var(--light-color);
+  font-size: 1.5rem;
+  transition: var(--transition);
+}
+
+.footer-content ul li a:hover {
+  opacity: 0.7;
+}
+
+.footer-content ul li {
+  margin: .5rem 1rem;
+}
+
+.footer-content>div:first-child {
+  margin-bottom: 3rem;
+}
+
+.footer-content>div:first-child div {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  margin: 5rem auto;
+  border-radius: 50%;
+}
+
+.footer-list,
+ul li {
+  display: inline-block;
+
+}
